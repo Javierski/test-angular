@@ -7,7 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListmailComponent implements OnInit {
 
-  constructor() { }
+  mails: any[];
+  constructor() {
+  	const mail1 = {
+		titulo: "Mail de prueba 1",
+		cuerpo: "Hola Angular desde Mail",
+		emisor: "javierski@gmail.com",
+		destinatario: "example@gmail.com"
+	};
+
+	const mail2 = {
+		titulo: "Mail de prueba 2",
+		cuerpo: "Hola Angular desde Mail",
+		emisor: "javierski@gmail.com",
+		destinatario: "example@gmail.com"
+	};
+
+	this.mails = [];
+	this.mails.push(mail1);
+	this.mails.push(mail2);
+  }
 
   ngOnInit(): void {
   }
