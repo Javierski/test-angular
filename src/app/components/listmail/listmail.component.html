@@ -5,10 +5,10 @@
 		<th>Emisor</th>
 		<th>Titulo</th>
 	</tr>
-	<tr *ngFor='let mail of mails'>
+	<tr *ngFor='let mail of mails; index as i'>
 		<td>
-			<div *ngIf="mail.state">Leido</div>
-			<div *ngIf="!mail.state">No leido</div>
+			<input type="radio" name="state-{{i}}" value="true"/>Leido
+			<input type="radio" name="state-{{i}}" value="false"/>No leido
 		</td>
 		<td>{{mail.sender}}</td>
 		<td>{{mail.title}}</td>
