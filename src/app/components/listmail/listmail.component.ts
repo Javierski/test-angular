@@ -10,17 +10,17 @@ export class ListmailComponent implements OnInit {
   mails: any[];
   constructor() {
   	const mail1 = {
-		titulo: "Mail de prueba 1",
-		cuerpo: "Hola Angular desde Mail",
-		emisor: "javierski@gmail.com",
-		destinatario: "example@gmail.com"
+		title: "Mail de prueba 1",
+		body: "Hola Angular desde Mail",
+		sender: "javierski@gmail.com",
+		receiver: "example@gmail.com"
 	};
 
 	const mail2 = {
-		titulo: "Mail de prueba 2",
-		cuerpo: "Hola Angular desde Mail",
-		emisor: "javierski@gmail.com",
-		destinatario: "example@gmail.com"
+		title: "Mail de prueba 2",
+		body: "Hola Angular desde Mail",
+		sender: "javierski@gmail.com",
+		receiver: "example@gmail.com"
 	};
 
 	this.mails = [];

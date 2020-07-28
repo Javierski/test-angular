@@ -4,12 +4,8 @@
 		<th>Emisor</th>
 		<th>Titulo</th>
 	</tr>
-	<tr>
-		<td>{{mails[0].emisor}}</td>
-		<td>{{mails[0].titulo}}</td>
-	</tr>
-	<tr>
-		<td>{{mails[1].emisor}}</td>
-		<td>{{mails[1].titulo}}</td>
+	<tr *ngFor='let mail of mails'>
+		<td>{{mail.sender}}</td>
+		<td>{{mail.title}}</td>
 	</tr>
 </table>
