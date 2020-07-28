@@ -13,14 +13,16 @@ export class ListmailComponent implements OnInit {
 		title: "Mail de prueba 1",
 		body: "Hola Angular desde Mail",
 		sender: "javierski@gmail.com",
-		receiver: "example@gmail.com"
+		receiver: "example@gmail.com",
+		state: true
 	};
 
 	const mail2 = {
 		title: "Mail de prueba 2",
 		body: "Hola Angular desde Mail",
 		sender: "javierski@gmail.com",
-		receiver: "example@gmail.com"
+		receiver: "example@gmail.com",
+		state: false
 	};
 
 	this.mails = [];

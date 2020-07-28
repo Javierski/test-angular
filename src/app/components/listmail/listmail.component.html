@@ -1,10 +1,15 @@
 <!-- <p>listmail works!</p> -->
 <table>
 	<tr>
+		<th>Estado</th>
 		<th>Emisor</th>
 		<th>Titulo</th>
 	</tr>
 	<tr *ngFor='let mail of mails'>
+		<td>
+			<div *ngIf="mail.state">Leido</div>
+			<div *ngIf="!mail.state">No leido</div>
+		</td>
 		<td>{{mail.sender}}</td>
 		<td>{{mail.title}}</td>
 	</tr>
