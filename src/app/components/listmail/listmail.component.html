@@ -7,8 +7,8 @@
 	</tr>
 	<tr *ngFor='let mail of mails; index as i'>
 		<td>
-			<input type="radio" name="state-{{i}}" value="true"/>Leido
-			<input type="radio" name="state-{{i}}" value="false"/>No leido
+			<input type="radio" name="state-{{i}}" [(ngModel)]="mail.state" [value]="true"/>Leido
+			<input type="radio" name="state-{{i}}" [(ngModel)]="mail.state" [value]="false"/>No leido
 		</td>
 		<td>{{mail.sender}}</td>
 		<td>{{mail.title}}</td>
