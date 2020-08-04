@@ -14,3 +14,6 @@
 		<td>{{mail.title}}</td>
 	</tr>
 </table>
+<h2>Estado de mail 1:</h2>
+<h3 *ngIf="mails[0].state">Leido</h3>
+<h3 *ngIf="!mails[0].state">No leido</h3>

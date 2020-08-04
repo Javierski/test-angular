@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListmailComponent implements OnInit {
 
   mails: any[];
+  
   constructor() {
   	const mail1 = {
 		title: "Mail de prueba 1",
